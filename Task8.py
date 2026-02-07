@@ -1,5 +1,9 @@
 class CyclicDictIterator:
-        
+    #Почему оба метода обязательны:
+    #  __iter__() - делает объект "итерируемым"  и позволяет использовать объект в for циклах
+    #  __next__() - делает объект "итератором":
+
+
     def __init__(self, data_dict):
         if not isinstance(data_dict, dict):
             raise TypeError("Ожидается словарь")
