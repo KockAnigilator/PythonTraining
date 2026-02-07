@@ -6,7 +6,7 @@ def my_all(lst):
 
 def main():
  
-    input_str = input("Введите элементы через пробел: ")
+    input_str = input("Введите элементы через пробел : ")
     elements = input_str.split()
     
     lst = []
