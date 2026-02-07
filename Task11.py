@@ -13,11 +13,11 @@ class BinomialSequence:
             coefficient = coefficient * (n - k) // (k + 1)
 
 # Проверка работы
-print("Треугольник Паскаля (первые 6 строк):")
+print("Треугольник Паскаля (первые 6 строк): ")
 for n in range(6):
     print(f"n={n}: {list(BinomialSequence.generate(n))}")
 
-print("\nСтрока n=10 (первые 5 коэффициентов):")
+print("\nСтрока n=10 (первые 5 коэффициентов): ")
 gen = BinomialSequence.generate(10)
 for i in range(5):
     print(f"C(10,{i}) = {next(gen)}")
